@@ -3,17 +3,31 @@
   "version": "1.0.0",
   "description": "",
   "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Ddist/index.js)",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lazy-ferret/ajs.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lazy-ferret/ajs/issues"
   },
-  "homepage": "https://github.com/Lazy-ferret/ajs#readme"
+  "homepage": "https://github.com/Lazy-ferret/ajs#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0"
+  }
 }
